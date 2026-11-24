@@ -1,25 +1,34 @@
-<form class="formulario" id="informacion">
+<form class="formulario" id="informacion" [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
   <h2>Infórmate</h2>
 
-  <input type="text" placeholder="Nombre">
+  <input type="text" placeholder="Nombre" formControlName="nombre">
+  @if (formulario.get('nombre')?.invalid &&
+     submitted) {
+       <small class="error"> El nombre es obligatorio.</small>
+  }
+  
 
   <div class="fila">
-    <input type="text" placeholder="Primer apellido">
-    <input type="text" placeholder="Segundo apellido">
+    <input type="text" placeholder="Primer apellido" formControlName="primerApellido">
+    <input type="text" placeholder="Segundo apellido" formControlName="segundoApellido">
   </div>
 
   <div class="genero">
     <span>Género</span>
-    <label><input type="radio" name="genero" value="mujer"> Mujer</label>
-    <label><input type="radio" name="genero" value="hombre"> Hombre</label>
-    <label><input type="radio" name="genero" value="no-binario"> No binario</label>
-    <label><input type="radio" name="genero" value="no-responde"> No responde</label>
+    <label><input type="radio" name="genero" value="mujer" formControlName="genero"> Mujer</label>
+    <label><input type="radio" name="genero" value="hombre" formControlName="genero"> Hombre</label>
+    <label><input type="radio" name="genero" value="no-binario" formControlName="genero"> No binario</label>
+    <label><input type="radio" name="genero" value="no-responde" formControlName="genero"> No responde</label>
   </div>
 
-  <input type="email" placeholder="E-mail">
+  <input type="email" placeholder="E-mail" formControlName="email">
+  @if (formulario.get('email')?.invalid &&
+     submitted) {
+       <small class="error"> El email es obligatorio.</small>
+  }
 
   <div class="fila">
-    <input type="text" placeholder="Código postal">
+    <input type="text" placeholder="Código postal" formControlName="codigoPostal">
     <select>
       <option value="espana">España</option>
       <option value="andorra">Andorra</option>
@@ -31,16 +40,16 @@
   <div class="fila">
     <div class="telefono">
       <input type="text" value="+34" class="prefijo">
-      <input type="tel" placeholder="Teléfono">
+      <input type="tel" placeholder="Teléfono" formControlName="telefono1">
     </div>
     <div class="telefono">
       <input type="text" value="+34" class="prefijo">
-      <input type="tel" placeholder="Teléfono">
+      <input type="tel" placeholder="Teléfono" formControlName="telefono2">
     </div>
   </div>
 
   <label class="privacidad">
-    <input type="checkbox">
+    <input type="checkbox" formControlName="privacidad">
     He leído y acepto la <a href="#">Política de privacidad</a>.
   </label>
 

@@ -78,3 +78,13 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+.error {
+  color: #050404;
+  font-size: 13px;
+  margin-top: 5px;
+  display: block;
+}
+

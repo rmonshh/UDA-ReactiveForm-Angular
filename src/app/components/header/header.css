@@ -1,0 +1,52 @@
+.logo img{
+  height: 60px;
+  
+}
+
+.boton {
+  background: var(--rosa);      
+  color: var(--azul);
+  font-weight: 700;
+  padding: 20px 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton:hover {
+  background: var(--azul);
+  color: var(--blanco);
+}
+
+.header {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background: var(--blanco);
+}
+
+.container__header {
+       padding: 30px;
+       width: 100%;              /* ocupa todo el ancho disponible... */
+       max-width: 2000px; 
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    padding: 0 16px;         /* menos margen lateral */
+  }
+
+  .logo img {
+    height: 32px;            /* logo más pequeño */
+  }
+
+  .boton {
+    padding: 12px 14px;      /* botón más compacto */
+    font-size: 0.875rem;     /* texto un poco menor */
+  }
+}

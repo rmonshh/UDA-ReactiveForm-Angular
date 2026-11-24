@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+       --gris: #F0F0F0;
+       --blanco: #FFFFFF;
+       --rosa: #FF87FF;
+       --rosa-claro: #FFDBFF;
+       --azul: #010079;
+       --fuente-titulo: "Barlow Condensed", Arial, sans-serif;
+       --fuente-texto: "Fira Sans", Arial, sans-serif;
+       --fuente-serif: "Source Serif 4", Georgia, serif;
+}
+
+* {
+       box-sizing: border-box;
+}
+
+body {
+       margin: 0;
+       font-family: var(--fuente-texto);
+       color: var(--azul);
+}

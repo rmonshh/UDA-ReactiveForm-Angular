@@ -1,0 +1,48 @@
+<form class="formulario" id="informacion">
+  <h2>Infórmate</h2>
+
+  <input type="text" placeholder="Nombre">
+
+  <div class="fila">
+    <input type="text" placeholder="Primer apellido">
+    <input type="text" placeholder="Segundo apellido">
+  </div>
+
+  <div class="genero">
+    <span>Género</span>
+    <label><input type="radio" name="genero" value="mujer"> Mujer</label>
+    <label><input type="radio" name="genero" value="hombre"> Hombre</label>
+    <label><input type="radio" name="genero" value="no-binario"> No binario</label>
+    <label><input type="radio" name="genero" value="no-responde"> No responde</label>
+  </div>
+
+  <input type="email" placeholder="E-mail">
+
+  <div class="fila">
+    <input type="text" placeholder="Código postal">
+    <select>
+      <option value="espana">España</option>
+      <option value="andorra">Andorra</option>
+      <option value="francia">Francia</option>
+      <option value="portugal">Portugal</option>
+    </select>
+  </div>
+
+  <div class="fila">
+    <div class="telefono">
+      <input type="text" value="+34" class="prefijo">
+      <input type="tel" placeholder="Teléfono">
+    </div>
+    <div class="telefono">
+      <input type="text" value="+34" class="prefijo">
+      <input type="tel" placeholder="Teléfono">
+    </div>
+  </div>
+
+  <label class="privacidad">
+    <input type="checkbox">
+    He leído y acepto la <a href="#">Política de privacidad</a>.
+  </label>
+
+  <button type="submit">Solicitar información</button>
+</form>

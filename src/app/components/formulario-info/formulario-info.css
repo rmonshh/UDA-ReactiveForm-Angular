@@ -1,0 +1,80 @@
+/* Caja del formulario */
+.formulario {
+  background: var(--gris);
+  color: var(--azul);          /* el texto del hero es blanco; aquí lo corregimos */
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;      /* campos uno debajo de otro */
+  gap: 28px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin: 0 0 6px;
+}
+
+/* Inputs y select */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  border: none;
+  background: var(--blanco);
+  color: var(--azul);
+  padding: 22px 20px;
+  font-size: 1rem;
+}
+
+/* Filas de dos columnas */
+.fila {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Género: etiqueta + 4 radios en línea */
+.genero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.9rem;
+}
+
+/* Teléfono: prefijo estrecho + número */
+.telefono {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 8px;
+}
+
+/* Casilla de privacidad */
+.privacidad {
+  font-size: 0.9rem;
+}
+.privacidad a {
+  color: var(--azul);
+}
+
+/* Botón de envío */
+button {
+  background: var(--azul);
+  color: var(--blanco);
+  border: none;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  background: var(--rosa);
+  color: var(--azul);
+}
+
+/* Móvil: las filas pasan a una columna */
+@media (max-width: 600px) {
+  .fila {
+    grid-template-columns: 1fr;
+  }
+}

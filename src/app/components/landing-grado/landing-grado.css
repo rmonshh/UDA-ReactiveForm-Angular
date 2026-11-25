@@ -26,9 +26,9 @@
 }
 
 .container__por-que {
-  max-width: 1500px;
+  max-width: 1800px;
   margin: 0 auto;
-  padding: 0 24px;
+  
 }
 
 .titulo {
@@ -39,7 +39,7 @@
 .rejilla {
   display: grid;
   grid-template-columns: repeat(2, 1fr);   /* 2x2 */
-  gap: 32px;
+  gap: 48px;
 }
 
 /* Móvil: una columna */
@@ -48,4 +48,12 @@
   .rejilla {
     grid-template-columns: 1fr;
   }
+}
+
+.titulo {
+  font-family: var(--fuente-titulo);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 80px;
 }

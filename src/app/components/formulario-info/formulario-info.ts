@@ -52,7 +52,7 @@ export class FormularioInfo {
 
                      const datos = this.formulario.value;
 
-                     // COnvertir objeto a JSON
+                     // Convertir objeto a JSON
                      const json = JSON.stringify(datos);
                      console.log(json);
               

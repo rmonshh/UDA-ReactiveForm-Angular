@@ -9,6 +9,8 @@
        --fuente-titulo: "Barlow Condensed", Arial, sans-serif;
        --fuente-texto: "Fira Sans", Arial, sans-serif;
        --fuente-serif: "Source Serif 4", Georgia, serif;
+       --beige: #E5D5AE;
+       --lila: #E4E4EE;
 }
 
 * {

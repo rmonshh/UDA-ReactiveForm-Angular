@@ -3,9 +3,10 @@ import { HeroInfo } from '../hero-info/hero-info';
 import { FormularioInfo } from '../formulario-info/formulario-info';
 import { TarjetaVentaja } from '../tarjeta-ventaja/tarjeta-ventaja';
 import { Ventaja } from '../../models/ventaja';
+import { SeccionIa } from '../seccion-ia/seccion-ia';
 
 @Component({
-  imports: [HeroInfo, FormularioInfo, TarjetaVentaja],
+  imports: [HeroInfo, FormularioInfo, TarjetaVentaja, SeccionIa],
   selector: 'app-landing-grado',
   styleUrl: './landing-grado.css',
   templateUrl: './landing-grado.html',

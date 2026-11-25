@@ -1,0 +1,75 @@
+.seccion-ia {
+  background: var(--violeta);
+  color: var(--azul);
+  padding: 60px 0 80px;
+}
+
+.contenedor {
+  max-width: 2000px;           /* el mismo que en el resto de la página */
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.etiqueta {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-family: var(--fuente-titulo);
+  font-size: 4.5rem;
+  line-height: 1.05;
+  margin: 0 0 40px;
+}
+
+.columnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* texto a la izquierda, lista a la derecha */
+  gap: 64px;
+  align-items: start;
+}
+
+h3 {
+  font-family: var(--fuente-titulo);
+  font-size: 2.2rem;
+  margin: 0 0 20px;
+}
+
+.texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Filas de la lista */
+.fila {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;   /* texto a la izquierda, flecha a la derecha */
+  align-items: center;
+  gap: 16px;
+  padding: 24px 8px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--blanco);
+  color: var(--azul);
+  font-family: var(--fuente-titulo);
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.fila svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;                   /* la flecha no se encoge si el texto es largo */
+}
+
+/* Móvil: una columna */
+@media (max-width: 800px) {
+  .columnas { grid-template-columns: 1fr; gap: 32px; }
+  h2 { font-size: 2.8rem; }
+  .fila { font-size: 1.3rem; }
+}

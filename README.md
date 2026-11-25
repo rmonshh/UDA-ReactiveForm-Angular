@@ -1,6 +1,6 @@
 # Landing de grado universitario (Angular)
 
-Proyecto de práctica que recrea una landing page de un grado universitario con Angular. El objetivo es aprender a dividir una página en componentes reutilizables y a comunicarlos entre sí.
+Proyecto de práctica que recrea una landing page de un grado universitario con Angular. El objetivo es aprender sobre Formularios Reactivos y a dividir una página en componentes reutilizables y a comunicarlos entre sí.
 
 ## Componentes
 

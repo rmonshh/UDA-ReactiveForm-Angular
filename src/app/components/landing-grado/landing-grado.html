@@ -1,25 +1,33 @@
-<section class="hero">
-       <div class="container__hero">
-              <app-hero-info></app-hero-info>
-              <app-formulario-info></app-formulario-info>
-       </div>
-</section>
+@if (grado(); as g) {
 
+  <section class="hero">
+    <div class="container__hero">
+      <app-hero-info
+        [etiqueta]="g.etiqueta"
+        [titulo]="g.titulo"
+        [subtitulo]="g.subtitulo"
+        [puntos]="g.puntos">
+      </app-hero-info>
+      <app-formulario-info></app-formulario-info>
+    </div>
+  </section>
 
-<section class="por-que" id="por-que">
-       <div class="container__por-que">
-              <h2 class="titulo">¿Por qué estudiar un grado en la UDA?</h2>
-              <div class="rejilla">
-                     @for (v of ventajas; track v.titulo) {
-                            <app-tarjeta-ventaja
-                                   [icono]="v.icono"
-                                   [titulo]="v.titulo"
-                                   [texto]="v.texto"
-                                   [variante]="v.variante">
-                            </app-tarjeta-ventaja>
-                     }
-              </div>
-       </div>
-</section>
+  <section class="por-que" id="por-que">
+    <div class="container__por-que">
+      <h2 class="titulo">¿Por qué estudiar en la Universidad Digital de Aurora?</h2>
+      <div class="rejilla">
+        @for (v of g.ventajas; track v.titulo) {
+          <app-tarjeta-ventaja
+            [icono]="v.icono"
+            [titulo]="v.titulo"
+            [texto]="v.texto"
+            [variante]="v.variante">
+          </app-tarjeta-ventaja>
+        }
+      </div>
+    </div>
+  </section>
 
-<app-seccion-ia></app-seccion-ia>
+  <app-seccion-ia></app-seccion-ia>
+
+}

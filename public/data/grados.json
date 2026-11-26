@@ -1,0 +1,104 @@
+[
+  {
+    "id": "multimedia",
+    "etiqueta": "Hasta 10% dto.",
+    "titulo": "Grado en Multimedia",
+    "subtitulo": "Domina el desarrollo y el diseño de aplicaciones interactivas.",
+    "puntos": [
+      "Sé un experto o experta en la creación de contenido digital.",
+      "Aprende a conceptualizar, diseñar y desarrollar experiencias digitales.",
+      "Ábrete paso en un sector de alta demanda profesional."
+    ],
+    "ventajas": [
+      { "icono": "sonrisa", "titulo": "Nuestro estudiantado nos avala", "texto": "El 82 % nos volvería a elegir.", "variante": "beige" },
+      { "icono": "trofeo", "titulo": "Pioneros en e-learning", "texto": "Más de 20 años impulsando tu futuro con formación de calidad.", "variante": "gris" },
+      { "icono": "ventana", "titulo": "45.000 graduados en Aurora", "texto": "Con preparación orientada al futuro.", "variante": "azul" },
+      { "icono": "personas", "titulo": "Reconocida por las empresas", "texto": "88 % de tasa de ocupación de nuestro estudiantado.", "variante": "lila" }
+    ]
+  },
+  {
+    "id": "informatica",
+    "etiqueta": "Plazas limitadas",
+    "titulo": "Grado en Ingeniería Informática",
+    "subtitulo": "Aprende a diseñar, programar y mantener sistemas software.",
+    "puntos": [
+      "Domina los lenguajes y las herramientas más demandadas.",
+      "Trabaja en proyectos reales desde el primer año.",
+      "Accede a un sector con empleo prácticamente garantizado."
+    ],
+    "ventajas": [
+      { "icono": "sonrisa", "titulo": "Estudiantado satisfecho", "texto": "El 79 % nos volvería a elegir.", "variante": "beige" },
+      { "icono": "trofeo", "titulo": "Referentes en tecnología", "texto": "Más de 20 años formando profesionales del sector.", "variante": "gris" },
+      { "icono": "ventana", "titulo": "30.000 titulados", "texto": "Con experiencia práctica desde el primer curso.", "variante": "azul" },
+      { "icono": "personas", "titulo": "Empleabilidad alta", "texto": "92 % de tasa de ocupación de nuestro estudiantado.", "variante": "lila" }
+    ]
+  },
+    {
+    "id": "diseno-grafico",
+    "etiqueta": "Nuevo",
+    "titulo": "Grado en Diseño Gráfico",
+    "subtitulo": "Crea identidades visuales, interfaces y piezas gráficas para cualquier medio.",
+    "puntos": [
+      "Aprende diseño editorial, de marca y de interfaces.",
+      "Trabaja con las herramientas que usan los estudios profesionales.",
+      "Construye un portfolio sólido desde el primer curso."
+    ],
+    "ventajas": [
+      { "icono": "sonrisa", "titulo": "Estudiantado satisfecho", "texto": "El 85 % nos volvería a elegir.", "variante": "beige" },
+      { "icono": "trofeo", "titulo": "Docentes del sector", "texto": "Profesionales en activo que enseñan lo que practican.", "variante": "gris" },
+      { "icono": "ventana", "titulo": "12.000 titulados", "texto": "Con proyectos reales en su portfolio.", "variante": "azul" },
+      { "icono": "personas", "titulo": "Red de estudios y agencias", "texto": "Prácticas en empresas colaboradoras.", "variante": "lila" }
+    ]
+  },
+  {
+    "id": "marketing-digital",
+    "etiqueta": "Plazas limitadas",
+    "titulo": "Grado en Marketing Digital",
+    "subtitulo": "Aprende a planificar, ejecutar y medir campañas en entornos digitales.",
+    "puntos": [
+      "Domina SEO, redes sociales y publicidad online.",
+      "Analiza datos para tomar decisiones con criterio.",
+      "Prepárate para un sector en crecimiento constante."
+    ],
+    "ventajas": [
+      { "icono": "sonrisa", "titulo": "Valoración alta", "texto": "El 80 % nos volvería a elegir.", "variante": "beige" },
+      { "icono": "trofeo", "titulo": "Enfoque práctico", "texto": "Campañas reales desde el primer semestre.", "variante": "gris" },
+      { "icono": "ventana", "titulo": "18.000 titulados", "texto": "Trabajando en agencias y departamentos de marketing.", "variante": "azul" },
+      { "icono": "personas", "titulo": "Empleabilidad alta", "texto": "89 % de tasa de ocupación de nuestro estudiantado.", "variante": "lila" }
+    ]
+  },
+  {
+    "id": "ciencia-de-datos",
+    "etiqueta": "Hasta 15% dto.",
+    "titulo": "Grado en Ciencia de Datos",
+    "subtitulo": "Aprende a extraer valor de los datos con estadística, programación e IA.",
+    "puntos": [
+      "Domina Python, SQL y las herramientas de análisis.",
+      "Construye modelos de aprendizaje automático.",
+      "Accede a uno de los perfiles más demandados."
+    ],
+    "ventajas": [
+      { "icono": "sonrisa", "titulo": "Estudiantado satisfecho", "texto": "El 78 % nos volvería a elegir.", "variante": "beige" },
+      { "icono": "trofeo", "titulo": "Formación puntera", "texto": "Contenidos actualizados cada curso.", "variante": "gris" },
+      { "icono": "ventana", "titulo": "9.000 titulados", "texto": "Con experiencia en proyectos de datos reales.", "variante": "azul" },
+      { "icono": "personas", "titulo": "Alta demanda", "texto": "94 % de tasa de ocupación de nuestro estudiantado.", "variante": "lila" }
+    ]
+  },
+  {
+    "id": "administracion-empresas",
+    "etiqueta": "Plazas limitadas",
+    "titulo": "Grado en Administración de Empresas",
+    "subtitulo": "Aprende a dirigir y gestionar organizaciones en un entorno digital.",
+    "puntos": [
+      "Domina finanzas, estrategia y gestión de equipos.",
+      "Aplica la tecnología a la gestión empresarial.",
+      "Prepárate para emprender o liderar proyectos."
+    ],
+    "ventajas": [
+      { "icono": "sonrisa", "titulo": "Estudiantado satisfecho", "texto": "El 81 % nos volvería a elegir.", "variante": "beige" },
+      { "icono": "trofeo", "titulo": "Metodología online", "texto": "Más de 20 años formando a distancia.", "variante": "gris" },
+      { "icono": "ventana", "titulo": "27.000 titulados", "texto": "Con perfil directivo y emprendedor.", "variante": "azul" },
+      { "icono": "personas", "titulo": "Reconocida por las empresas", "texto": "87 % de tasa de ocupación de nuestro estudiantado.", "variante": "lila" }
+    ]
+  }
+]

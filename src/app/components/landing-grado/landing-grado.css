@@ -1,13 +1,14 @@
 .hero {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),  /* capa oscura para que se lea el texto */
-    url('/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg');                                       /* la foto */
-  background-size: cover;       /* rellena todo el hero sin deformarse */
-  background-position: center;  /* centra la foto */
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('/multimedia.jpg');   /* tu foto original; revisa la extensión */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   color: var(--blanco);
-  padding: 150px 0;
+  padding: 60px 0;
 }
+
 
 
 .container__hero {

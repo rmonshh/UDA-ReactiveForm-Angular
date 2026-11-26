@@ -1,0 +1,21 @@
+<!-- Banner superior -->
+<section class="banner">
+  <div class="contenedor">
+    <h1>Nuestros grados</h1>
+    <p>Elige el grado que quieres estudiar en la Universidad Digital de Aurora.</p>
+  </div>
+</section>
+
+<!-- Listado -->
+<section class="listado">
+  <div class="contenedor rejilla">
+    @for (g of grados(); track g.id) {
+      <a class="grado" [routerLink]="['/grados', g.id]">
+        <span class="etiqueta">{{ g.etiqueta }}</span>
+        <h2>{{ g.titulo }}</h2>
+        <p>{{ g.subtitulo }}</p>
+        <span class="enlace">Ver grado →</span>
+      </a>
+    }
+  </div>
+</section>

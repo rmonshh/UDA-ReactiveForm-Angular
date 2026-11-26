@@ -1,0 +1,78 @@
+/* Banner */
+.banner {
+  background: var(--azul);
+  color: var(--blanco);
+  padding: 80px 0;
+}
+
+.banner h1 {
+  font-family: var(--fuente-titulo);
+  font-size: 4.5rem;
+  line-height: 1.05;
+  margin: 0 0 16px;
+}
+
+.banner p {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+/* Contenedor: mismo ancho y margen que el header */
+.contenedor {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+/* Listado */
+.listado {
+  padding: 60px 0 80px;
+}
+
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.grado {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 32px;
+  background: var(--gris);
+  color: var(--azul);
+  text-decoration: none;
+}
+
+.grado:hover {
+  background: var(--lila);
+}
+
+.etiqueta {
+  background: var(--rosa-claro);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+}
+
+.grado h2 {
+  font-family: var(--fuente-serif);
+  font-size: 2rem;
+  margin: 20px 0 12px;
+}
+
+.grado p {
+  font-size: 1.1rem;
+  margin: 0 0 24px;
+}
+
+.enlace {
+  margin-top: auto;           /* empuja el enlace al fondo de la tarjeta */
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .rejilla { grid-template-columns: 1fr; }
+  .banner h1 { font-size: 3rem; }
+}

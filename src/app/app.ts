@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { LandingGrado } from './components/landing-grado/landing-grado';
 import { Header } from './components/header/header';
+import { Footer } from './components/footer/footer';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
-  imports: [LandingGrado, Header],
+  imports: [RouterOutlet, Header, Footer],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

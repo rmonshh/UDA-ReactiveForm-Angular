@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import { HeroInfo } from '../hero-info/hero-info';
 import { FormularioInfo } from '../formulario-info/formulario-info';
 import { TarjetaVentaja } from '../tarjeta-ventaja/tarjeta-ventaja';
-import { Ventaja } from '../../models/ventaja';
 import { SeccionIa } from '../seccion-ia/seccion-ia';
+import { Datos } from '../../services/datos';
+import { Grado } from '../../models/grado';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   imports: [HeroInfo, FormularioInfo, TarjetaVentaja, SeccionIa],
@@ -11,12 +13,15 @@ import { SeccionIa } from '../seccion-ia/seccion-ia';
   styleUrl: './landing-grado.css',
   templateUrl: './landing-grado.html',
 })
-export class LandingGrado {
-       
-       ventajas: Ventaja[] = [
-  { icono: 'sonrisa', titulo: 'Nuestro estudiantado nos avala', texto: 'El 77 % nos volvería a elegir.', variante: 'beige' },
-  { icono: 'trofeo', titulo: 'Pioneros en e-learning', texto: 'Más de 30 años impulsando tu futuro con formación de calidad.', variante: 'gris' },
-  { icono: 'ventana', titulo: '133.000 graduados por la UDA', texto: 'Con preparación orientada al futuro.', variante: 'azul' },
-  { icono: 'personas', titulo: 'Reconocida por las empresas', texto: '91 % de tasa de ocupación de nuestro estudiantado.', variante: 'lila' }
-];
+export class LandingGrado implements OnInit {
+  private datos = inject(Datos);                      // servicio que lee el JSON
+  grado = signal<Grado | undefined>(undefined);       // aquí se guarda el grado; vacío al principio
+  private ruta = inject(ActivatedRoute);
+
+  ngOnInit() {
+  const id = this.ruta.snapshot.paramMap.get('id');        // lee "informatica" de /grados/informatica
+  this.datos.obtenerGrados().subscribe(grados => {
+    this.grado.set(grados.find(g => g.id === id));         // antes: grados[0]
+  });
+}
 }

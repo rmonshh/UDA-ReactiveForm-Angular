@@ -1,0 +1,66 @@
+.footer {
+  background: var(--azul);
+  color: var(--blanco);
+}
+
+.contenedor {
+  max-width: 1500px;           /* mismo ancho que header y listado */
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.columnas {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;   /* la primera columna, algo más ancha */
+  gap: 48px;
+  padding-top: 56px;
+  padding-bottom: 40px;
+}
+
+.logo {
+  height: 44px;
+  background: var(--blanco);   /* el logo es azul: necesita fondo claro sobre el azul */
+  padding: 6px 10px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-family: var(--fuente-titulo);
+  font-size: 1.6rem;
+  margin: 0 0 16px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--rosa);
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Franja inferior con la línea de copyright */
+.legal {
+  border-top: 1px solid var(--rosa);
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .columnas { grid-template-columns: 1fr; gap: 32px; }
+}
